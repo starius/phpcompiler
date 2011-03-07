@@ -73,11 +73,7 @@ function php_includer($file)
             //if ($already_included[$inc] == 1 && $temp[$inc] == 1)
             if ($already_included[$inc] == 1 && substr($tstr, 0, 5) != '[INC]')
             {
-                if ($_GET['mess'] == 'all')
-                {
-                    echo '<br><br>';
-                    echo "You want include file $inc in file $file several times";
-                }
+                echo "You want include file $inc in file $file several times";
 
                 continue;
             }

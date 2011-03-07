@@ -63,18 +63,15 @@ function css_packer($filelist)
 
     #####################
 
-    if ($_GET['pack'] == 'yes')
-    {
-        // запускаем кодировщик
+    // запускаем кодировщик
 
-        $encoding = 'None';
-        $fast_decode = true;
-        $special_char = false;
+    $encoding = 'None';
+    $fast_decode = true;
+    $special_char = false;
 
-        $packer = new JavaScriptPacker($css, $encoding, $fast_decode, $special_char);
+    $packer = new JavaScriptPacker($css, $encoding, $fast_decode, $special_char);
 
-        $css = $packer->pack();
-    }
+    $css = $packer->pack();
 
     $css .= "\n\n";
 

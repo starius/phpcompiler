@@ -4,12 +4,6 @@
 function is_it_new($file, $exec = false)
 {
 
-    if ($_GET['remake'] == 'yes')
-    {
-        // если всё переделывать - все файлы новые
-        return true;
-    }
-
     global $include;
     global $modified;
     global $last_done;

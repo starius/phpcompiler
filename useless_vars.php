@@ -40,11 +40,7 @@ function useless_vars($text)
             $text = str_replace($definition[0], '', $text);
 
 
-            if ($_GET['mess'] == 'all')
-            {
-                echo '<br><br>';
-                echo 'Var ' . $definition[0] . ' was deleted from ' . $file;
-            }
+            echo 'Var ' . $definition[0] . ' was deleted from ' . $file;
 
         }
     }
