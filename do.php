@@ -341,14 +341,8 @@ if ($to_compile)
 {
     foreach($to_compile as $file)
     {
-        $url = 'http://' . $_GET['site'] . '/' . $file;
-        $text = implode(file($url));
-
-
-        $file = str_replace('.php', '.htm', $file);
-        $w = fopen($wwwpath . $file, 'w');
-        fwrite($w, $text);
-        fclose($w);
+        $file_new = str_replace('.php', '.html', $file);
+        system("php " . $wwwpath.$file . " > " . $wwwpath.$file_new);
     }
 }
 
