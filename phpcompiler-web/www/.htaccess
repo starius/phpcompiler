@@ -1,0 +1,3 @@
+# UTF-8
+AddDefaultCharset UTF-8
+php_value mbstring.func_overload 1

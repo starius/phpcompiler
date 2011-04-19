@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>PHP compiler</title>
+    </head>
+
+    <body>
+        <h1>PHP compiler</h1>
+
+        <form action=do.php method=get>
+            
+            Project (site) name:
+            <br>
+            <input type=text name=site> 
+            
+            
+            <br><br>
+            Should JS scripts and CSS be packed?
+            <br>
+            <input type=radio name=pack value=yes id=id_yes checked> 
+            <label for=id_yes>Yes</label> | 
+            <input type=radio name=pack value=no id=id_no> 
+            <label for=id_no>No</label>
+            
+            
+            
+            <br><br>
+            Clean php? (Delete useless functions and vars, etc)
+            <br>
+            <input type=radio name=func value=yes id=id_yes1 checked> 
+            <label for=id_yes1>Yes</label> | 
+            <input type=radio name=func value=no id=id_no1> 
+            <label for=id_no1>No</label>
+            
+            
+            
+            <br><br>
+            Remake not-changed files?
+            <br>
+            <input type=radio name=remake value=yes id=id_remake1> 
+            <label for=id_remake1>Yes</label> | 
+            <input type=radio name=remake value=no id=id_remake2 checked> 
+            <label for=id_remake2>No</label>
+            
+            
+            
+            
+            <br><br>
+            Messages:
+            <br>
+            <input type=radio name=mess value=all id=id_all> 
+            <label for=id_all>All</label> | 
+            <input type=radio name=mess value=important id=id_important checked> 
+            <label for=id_important>Important</label>
+            
+            
+            <br><br>
+            <input type=submit value='Go'>
+
+        </form>
+
+    </body>
+</html>
